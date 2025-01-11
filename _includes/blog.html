@@ -1,0 +1,42 @@
+<div class="container" id="centered">
+    <h2>Blog 📝</h2>
+    <p>Horibyte's blog, random experiences and misc stuff talked by yours truly!</p>
+    </div>
+    <p>&nbsp;</p>
+    <div class="container is-hidden-mobile" id="blog-post">
+        {% for post in site.posts %}
+    <div class="columns" id="list">
+        <div class="column-b">
+            <figure class="image is-16by9">    
+            <img src="{{ post.image }}" width="95%" height="95%" id="blogphoto"></img>
+            </figure>
+        </div>
+        <div class="column-b is-half" id="blog-post-list2">
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.date | date_to_string }}</p>
+    <p>{{ post.content | strip_html | truncatewords: 27 }}</p>
+    </div>
+    <div class="row is-narrow">
+    <a href="{{ post.url }}"><button>Read</button></a>
+    </div>
+    <hr>
+    </div>
+    {% endfor %}
+    </div>
+
+
+    <div class="container is-hidden-widescreen">
+    <div class="container is-hidden-widescreen" id="bpost-mobile">
+        {% for post in site.posts %}
+            <div class="column-b">
+                <figure class="image is-16by9">    
+                <img src="{{ post.image }}" width="110%" height="110%"></img>
+                </figure>
+            </div>
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.date | date_to_string }}</p>
+        <p>{{ post.content | strip_html | truncatewords: 27 }}</p>
+        <a href="{{ post.url }}"><button style="justify-content: center;">Read</button></a>
+        {% endfor %}
+    </div>
+</div>
