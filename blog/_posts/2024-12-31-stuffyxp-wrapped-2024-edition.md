@@ -21,7 +21,7 @@ I originally had the channel's topic something different than tech (i did have s
 
 That was also the time i joined Discord so i joined tech communities and yeah, it inspired me to make my own tech vids.
 ###### &nbsp;
-The making of [*A VMware First-Timer installs Windows XP*](<https://youtu.be/eKW6QilW3qo?si=KC6UaCUd2hqFZ2sF>)  began back in January 14th (for the record it released on February 13th), it was def pain trying to get it done, i was using the famous *eMachines ET1810* (aka The Celery PC) so yeah, Celeron, videos, they don't mix up do they~
+The making of [A VMware First-Timer installs Windows XP](<https://youtu.be/eKW6QilW3qo?si=KC6UaCUd2hqFZ2sF>)  began back in January 14th (for the record it released on February 13th), it was def pain trying to get it done, i was using the famous *eMachines ET1810* (aka The Celery PC) so yeah, Celeron, videos, they don't mix up do they~
 
 Well they do, because on February 13th the video released after using a trillion OSes and having a faulty power outlet, after that i joined a couple of subs, reacching 50 subs right after, then i stopped for a bit until i made **Installing Modern Programs on Windows Vista!** and **The Windows XP Vibes are here! - Whistler Beta 2**.
 

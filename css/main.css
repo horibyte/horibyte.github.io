@@ -27,6 +27,28 @@
   padding-left: 2.5% !important;
 }
 
+#imagePopup {
+  position: absolute;
+  background-color: rgba(0,0,0,0.51);
+  border-radius: 15px;
+  box-shadow: #050813;
+  width: 487px;
+  padding: 10px;
+  z-index: 9999; /* Ensure it appears on top */
+    /* ... other styles ... */
+}
+
+#imagePopup {
+  position: absolute;
+  right: 40px; /* Position 10px to the right of the image */
+  /* top: image.offsetTop - popup.offsetHeight - 10px; */
+  /* ... other styles ... */
+}
+
+#imagepopup2 {
+  padding-right: 1.5% !important;
+}
+
 #sdesc {
   padding-bottom: 5.5% !important;
   margin: 0px auto !important
@@ -102,6 +124,7 @@
   padding-left: 5%;
 }
 
+
 #sbcontent {
   justify-content: center !important;
   padding-left: 2.5% !important;
@@ -156,7 +179,7 @@ html {
   overflow-x: hidden !important;
 }
 
-#button {
+#horibyteButton {
   justify-content: right !important; position: relative !important; margin: 0 auto !important; display: block !important; float:right;
   padding-right: 1.5%;
   padding-bottom: 1.5%;
@@ -165,9 +188,8 @@ html {
 /* Apply Background */
 html {
   background-image: url('/img/bg.png');
-  image-rendering: pixelated;
-  background-size: cover;
-  background-attachment: fixed;
+	background-attachment: fixed !important;
+	background-size: cover !important;
 }
 
 /* Set font to Sometype Mono */

@@ -25,6 +25,11 @@ html {
   overflow-x: hidden !important;
 }
 
+a {
+  color: rgba(137, 196, 244, 1) !important;
+  text-decoration: none;
+}
+
 #bcontent {
   text-align: left;
   width: 1174px !important;
