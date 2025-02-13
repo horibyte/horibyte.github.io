@@ -2,7 +2,7 @@
 layout: blogpost
 title: Changes were made.
 desc: Just 2 months in to 2025, everything is different already.
-date: February 12th, 2025 @ 7:00 pm CST/GMT-6
+date: February 12th, 2025 @ 7:00pm GMT-6
 image: /blog/img/2025-02-12/thumb.png
 ---
 
