@@ -17,6 +17,10 @@
   text-align: center;
 }
 
+i, em {
+  font-style: italic;
+}
+
 /* Mozilla Web Docs Custom Scrollbar */
 html {
   overflow: scroll !important;
