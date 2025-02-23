@@ -2,7 +2,7 @@ var intervalId;
 
 function displayUserAgent() {
   var userAgentString = navigator.userAgent;
-  var htmlContent = '<p><i class="fas fa-circle-info"></i> Horibyte Website Version 2.2.3077.main.250212-1900</p><i class="fas fa-user-gear"></i>&nbsp;' + userAgentString;
+  var htmlContent = '<p><i class="fas fa-circle-info"></i> Horibyte Website Version 2.3.3089.main.250223-1320</p><i class="fas fa-user-gear"></i>&nbsp;' + userAgentString;
   document.getElementById('userAgent').innerHTML = htmlContent;
 }
 

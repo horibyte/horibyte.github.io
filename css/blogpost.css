@@ -136,6 +136,22 @@ a {
   color: hsla(0, 0%, 100%, 0.774);
 }
 
+/* is-hidden-widescreen re-implementation from Bulma */
+@media screen and (min-width:1081px) {
+  .is-display-none-widescreen,
+  .is-hidden-widescreen {
+    display:none!important;
+  }
+}
+
+/* is-hidden-mobile re-implementation from Bulma */
+@media screen and (max-width:1080px) {
+  .is-display-none-mobile,
+  .is-hidden-mobile {
+    display:none!important;
+  }
+}
+
 /* Apply Background */
 html {
   background-image: url('/img/bg.png');

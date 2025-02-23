@@ -64,7 +64,8 @@ I will just do a list with MD so its easier lol
 
 <p style="text-align:center;">This image fits the thing perfectly lol</p>
 <p style="font-size:2px;">&nbsp;</p>
-![Squid Game Season 1 & 2 Smile meme template, the top "happy" panel has the label "March 2024", the more serious, mad panel has the label "July 2024".](/blog/img/2025-02-12/smile-meme.webp){: style="max-width: 100; height: auto; padding-left: 28.5%;"}
+<img alt="Squid Game Season 1 & 2 Smile meme template, the top happy panel has the label March 2024, the more serious, mad panel has the label July 2024" src="/blog/img/2025-02-12/smile-meme.webp" style="max-width: 100; height: auto; padding-left: 28.5%;" class="is-hidden-mobile">
+<img alt="Squid Game Season 1 & 2 Smile meme template, the top happy panel has the label March 2024, the more serious, mad panel has the label July 2024" src="/blog/img/2025-02-12/smile-meme.webp" style="max-width:100%!important;height:auto;" class="is-hidden-widescreen">
 
 - **And for last but not least......being someone who is more likeable i guess**: This one doesn't make sense..sorta, what I mean is that with this new name and stuff, I just seem someone who is nice and stuff than the name StuffyXP (i realized what it could prob mean a while ago), i've met alot of new people than I ever really did on that ""name family tree"" thing I had, and honestly, I'm glad I made these changes.
 

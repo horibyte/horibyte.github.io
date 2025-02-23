@@ -45,6 +45,11 @@
   /* ... other styles ... */
 }
 
+i, em {
+  font-style: italic;
+}
+
+
 #imagepopup2 {
   padding-right: 1.5% !important;
 }
@@ -68,6 +73,19 @@
   color: white;
   text-align: center;
 }
+
+#codeblock {
+  background-color: rgba(0,0,0,0.5) !important;
+  width: 85%;
+  display: block;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto;
+  outline: #000000;
+  outline-color: #000000;
+  outline-width: 5px;
+}
+
 
 /* is-hidden-widescreen re-implementation from Bulma */
 @media screen and (min-width:1081px) {
