@@ -20,7 +20,11 @@
 
 title: Horibyte
 email: thehoribyte@gmail.com
+<<<<<<< HEAD
 description: "Horibyte's personal blog."
+=======
+description: "Horibyte's blog"
+>>>>>>> 4e7e7e18c8b6feb329f009af657b4c80c16d5bd1
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://horibyte.is-a.dev" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: Horibyte
