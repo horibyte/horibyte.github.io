@@ -1,4 +1,57 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-03-08T10:09:32-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Horibyte</title><subtitle>Horibyte&apos;s personal blog.</subtitle><entry><title type="html">Changes were made.</title><link href="http://localhost:4000/blog/2025/02/12/changes-were-made.html" rel="alternate" type="text/html" title="Changes were made." /><published>2025-02-12T19:00:00-06:00</published><updated>2025-02-12T19:00:00-06:00</updated><id>http://localhost:4000/blog/2025/02/12/changes-were-made</id><content type="html" xml:base="http://localhost:4000/blog/2025/02/12/changes-were-made.html"><![CDATA[<p>As you’ve might seen on January 1st, 2025, things about me were different already, new year, new me took seriously, innit?</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-03-09T11:39:51-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Horibyte</title><subtitle>Horibyte&apos;s personal blog.</subtitle><entry><title type="html">My first experience with WYSIWYG &amp;amp; Microsoft Frontpage</title><link href="http://localhost:4000/blog/2025/03/09/my-first-experience-with-wysiwyg.html" rel="alternate" type="text/html" title="My first experience with WYSIWYG &amp;amp; Microsoft Frontpage" /><published>2025-03-09T12:00:00-06:00</published><updated>2025-03-09T12:00:00-06:00</updated><id>http://localhost:4000/blog/2025/03/09/my-first-experience-with-wysiwyg</id><content type="html" xml:base="http://localhost:4000/blog/2025/03/09/my-first-experience-with-wysiwyg.html"><![CDATA[<p>As you’ve might seen today, I’ve launched a new front-end of my website for old browsers, made completely with 
+<strong>Microsoft FrontPage 2003</strong>, and well, today I’ll be telling the type of bugs I had to go through…</p>
+
+<h1 id="the-begining">The begining</h1>
+
+<p>At the start it was pretty nice, I had the “Split” view enabled since I wasn’t so sure about the whole WYSIWYG and that stuff, it was kinda nice and I did a nice test page, but then the problems arose..</p>
+
+<h2 id="the-navegation-bar">The navegation bar</h2>
+
+<p>If you are vieweing this on the modern website, this is how it looks like:</p>
+
+<p><img src="/blog/img/2025-03-09/navbar.png" alt="Horibyte Website Retro Front-end navegation bar" style="width:-moz-available;height:auto;" /></p>
+
+<p>And oh boy, it was sure painful to get everything right…</p>
+
+<p>Here are some screenshots of me not getting it to work cuz I have no idea how to explain it:</p>
+
+<p><img src="/blog/img/2025-03-09/discord-thing-1.png" alt="" style="width:-moz-available;height:auto;" /></p>
+
+<p><img src="/blog/img/2025-03-09/discord-thing-2.png" alt="" style="width:-moz-available;height:auto;" /></p>
+
+<p><img src="/blog/img/2025-03-09/discord-thing-3.png" alt="" style="width:-moz-available;height:auto;" /></p>
+
+<p><img src="/blog/img/2025-03-09/discord-thing-4.png" alt="" style="width:-moz-available;height:auto;" /></p>
+
+<p>As you can see, it was trial and error to get the navbar..bar to get fully working, which took 7 hours between 2 days of fixing…yeah I could do it in like 15 mins or so but nah this took me that amount of time. Insane.</p>
+
+<p>Not only it didn’t just want to put the text properly, I had to come up with some weird fixes for it to even go to the max of the screen like it does now.</p>
+
+<h2 id="blog-and-centering-too">Blog, and centering, too</h2>
+
+<p>You thought the blog didn’t have its issues, nah, it did.</p>
+
+<p>Even tho I don’t have more screenshots of it, it was kind of pain to make the blog homepage work, here’s another example</p>
+
+<p><img src="/blog/img/2025-03-09/discord-thing-6.png" alt="" style="width:-moz-available;height:auto;" /></p>
+
+<p>Yeah things also refused to center properly, as you can see here:</p>
+
+<p><img src="/blog/img/2025-03-09/discord-thing-5.png" alt="" style="width:-moz-available;height:auto;" /></p>
+
+<p>Something that always annoyed me is that the Design mode is not really accurate to the preview, which made debugging it like 10x harder.</p>
+
+<p>Lists/bullets didn’t want to work either with the fix I added which was weird..</p>
+
+<p>When I was done with the navbar + blog, I just went to port everything else which was easy, I made the Projects and Socials page be lists cuz I’m NOT bothering to make the goddamn boxes after all I did for a single box.</p>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>In the end, everything went out alright, it’s just that I suck with WYSIWYG, mainly because I’m already used to coding in general.</p>
+
+<div class="container" style="color: lightgray; font-size: small;">
+You tell me people didn't have to debug the heck out of an HTML file for it to only be a missing &lt;/div&gt;? Insane!
+</div>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[As you’ve might seen today, I’ve launched a new front-end of my website for old browsers, made completely with Microsoft FrontPage 2003, and well, today I’ll be telling the type of bugs I had to go through…]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/blog/img/2025-03-09/thumb.png" /><media:content medium="image" url="http://localhost:4000/blog/img/2025-03-09/thumb.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Changes were made.</title><link href="http://localhost:4000/blog/2025/02/12/changes-were-made.html" rel="alternate" type="text/html" title="Changes were made." /><published>2025-02-12T19:00:00-06:00</published><updated>2025-02-12T19:00:00-06:00</updated><id>http://localhost:4000/blog/2025/02/12/changes-were-made</id><content type="html" xml:base="http://localhost:4000/blog/2025/02/12/changes-were-made.html"><![CDATA[<p>As you’ve might seen on January 1st, 2025, things about me were different already, new year, new me took seriously, innit?</p>
 
 <p>This post will go into the reasoning why I’m now the persona known as “Horibyte”, keep reading to see more.</p>
 
