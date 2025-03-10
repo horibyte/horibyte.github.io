@@ -1,3 +1,24 @@
+<!-- redir if old -->
+ <script>
+ function redirectOldBrowsers() {
+  // 1. Check for specific old browser versions
+  var isOldIE = navigator.userAgent.indexOf('MSIE') !== -1 && parseInt(navigator.userAgent.split('MSIE')[1]) < 9;
+  var isOldSafari = navigator.userAgent.indexOf('Safari') !== -1 && navigator.userAgent.indexOf('Version/5') !== -1; 
+  // ... add more specific checks if needed
+
+  // 2. Check for lack of HTML5 features (example: canvas)
+  var supportsHTML5 = !!document.createElement('canvas').getContext;
+
+  // Redirect if any condition is met
+  if (isOldIE || isOldSafari || !supportsHTML5 /* || other conditions */) {
+    window.location.href = "https://horibyte.is-a.dev/retro-site/index.htm"; // Replace with your actual URL
+  }
+}
+
+// Call the function when the page loads
+redirectOldBrowsers();
+ </script>
+
 <h2>Welcome! 👋</h2>
 <P>This is Horibyte's personal website, feel free to explore this whenever you want!</P>
 <p>&NonBreakingSpace;</p>
