@@ -1,0 +1,89 @@
+<!-- redir if old -->
+ <script>
+ function redirectOldBrowsers() {
+  // 1. Check for specific old browser versions
+  var isOldIE = navigator.userAgent.indexOf('MSIE') !== -1 && parseInt(navigator.userAgent.split('MSIE')[1]) < 9;
+  var isOldSafari = navigator.userAgent.indexOf('Safari') !== -1 && navigator.userAgent.indexOf('Version/5') !== -1; 
+  // ... add more specific checks if needed
+
+  // 2. Check for lack of HTML5 features (example: canvas)
+  var supportsHTML5 = !!document.createElement('canvas').getContext;
+
+  // Redirect if any condition is met
+  if (isOldIE || isOldSafari || !supportsHTML5 /* || other conditions */) {
+    window.location.href = "https://horibyte.is-a.dev/retro-site/index.htm"; // Replace with your actual URL
+  }
+}
+
+// Call the function when the page loads
+redirectOldBrowsers();
+ </script>
+
+<h2>Welcome! 👋</h2>
+<P>This is Horibyte's personal website, feel free to explore this whenever you want!</P>
+<p>&NonBreakingSpace;</p>
+<h3>Where do you want to go today?</h3>
+<p><a href="https://youtube.com/@stuffyxp"><button><i class="fa-brands fa-youtube"></i>&nbsp;YouTube Channel</button></a>&nbsp;<a href="https://wetdry.world/@horibyte"><button><i class="fa-brands fa-mastodon"></i>&nbsp;Mastodon Profile</button></a>&nbsp;<a href="https://bsky.app/profile/horibyte.is-a.dev"><button><i class="fab fa-bluesky"></i>&nbsp;Bluesky Profile</button></a>&nbsp;<a href="https://discord.gg/5n8sDTR37v"><button><i class="fab fa-discord"></i>&nbsp;Discord Server</button></a></p>
+<p>&nbsp;</p>
+<h3>Featured Videos</h3>
+<p>A list of videos that show off what my work is.</p>
+<div class="container is-hidden-mobile" id="featured-videos-dt">
+    <div class="row">
+        <iframe width="380" height="215" src="https://www.youtube.com/embed/IPZfS6C_a-4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="380" height="215" src="https://www.youtube.com/embed/aelGNQekZIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="380" height="215" src="https://www.youtube.com/embed/FlCzQW10Eso?si=sfbnqrQUFnfoIQZc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="row-text">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Geometry Dash... on Windows Vista!?&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p>Is the Intel Pentium F00F bug possible on 86Box?</p>
+        <p>Haiku - The modern implementation for BeOS!</p>
+    </div>
+    <div class="row">
+        <iframe width="380" height="215" src="https://www.youtube.com/embed/iuiFjIBBz08?si=5oqzUJyYKWQMkgs3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="380" height="215" src="https://www.youtube.com/embed/wH4ug41km8Q?si=vXq3zKm9_DJdncSN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="380" height="215" src="https://www.youtube.com/embed/a2Snbqy2M4s?si=PObvVBKcuEhNZbZK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="row-text">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Using Windows 11 for the first time!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;VMware's Early Days... (v1.0-294)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p>&nbsp;&nbsp;&nbsp;So i installed Arch Linux the other day...</p>
+    </div>
+        </div>
+        <div class="container is-hidden-widescreen">
+            <div class="column">
+            <iframe width="100%" height="215" src="https://www.youtube.com/embed/IPZfS6C_a-4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p id="ftvid-text-mob">Geometry Dash... on Windows Vista?</p>
+        </div>
+        <div class="column">
+            <iframe width="100%" height="215" src="https://www.youtube.com/embed/aelGNQekZIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p id="ftvid-text-mob">Is the Intel Pentium F00F bug possible on 86Box?</p>
+            </div>
+            <div class="column">
+            <iframe width="100%" height="215" src="https://www.youtube.com/embed/FlCzQW10Eso?si=sfbnqrQUFnfoIQZc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p id="ftvid-text-mob">Haiku - The modern implementation for BeOS!</p>
+        </div>
+        <div class="column">
+            <iframe width="100%" height="215" src="https://www.youtube.com/embed/iuiFjIBBz08?si=5oqzUJyYKWQMkgs3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p id="ftvid-text-mob">Using Windows 11 for the first time!</p>
+        </div>
+        <div class="column">
+            <iframe width="100%" height="215" src="https://www.youtube.com/embed/wH4ug41km8Q?si=vXq3zKm9_DJdncSN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p id="ftvid-text-mob">VMware's Early Days... (v1.0-294)</p>
+            </div>
+            <div class="column">
+                <iframe width="100%" height="215" src="https://www.youtube.com/embed/a2Snbqy2M4s?si=PObvVBKcuEhNZbZK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p id="ftvid-text-mob">So i installed Arch Linux the other day...</p>
+        </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</div>
+<div style="text-align: center;">
+<h3>Webrings!</h3>
+<p>
+    <a href="https://fediring.net/previous?host=horibyte.is-a.dev">←</a>
+    <a href="https://fediring.net/">Fediring</a>
+    <a href="https://fediring.net/next?host=horibyte.is-a.dev">→</a>
+</p>
+</div>

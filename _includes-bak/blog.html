@@ -1,0 +1,46 @@
+<div class="container" id="centered">
+    <h2>Blog 📝</h2>
+    <p>Horibyte's blog, random experiences and misc stuff talked by yours truly!</p>
+</div>
+<p style="font-size:5px;">&nbsp;</p>
+<a class="is-hidden-mobile" style="float: right; padding-right: 10%;" href="/feed.xml"><button><i class="fas fa-rss"></i>&nbsp;Subscribe via RSS!</button></a>
+<a class="is-hidden-widescreen" href="/feed.xml"><button><i class="fas fa-rss"></i>&nbsp;Subscribe via RSS!</button></a>
+    <p style="font-size:5px;">&nbsp;</p>
+    <p>&NoBreak;</p>
+    <div class="container is-hidden-mobile" id="blog-post">
+        {% for post in site.posts %}
+    <div class="columns" id="list">
+        <div class="column-b">
+            <figure class="image is-16by9">    
+            <img src="{{ post.image }}" width="95%" height="95%" id="blogphoto"></img>
+            </figure>
+        </div>
+        <div class="column-b is-half" id="blog-post-list2">
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.date | date_to_string }}</p>
+    <p>{{ post.content | strip_html | truncatewords: 27 }}</p>
+    </div>
+    <div class="row is-narrow">
+    <a href="{{ post.url }}"><button>Read</button></a>
+    </div>
+    <hr>
+    </div>
+    {% endfor %}
+    </div>
+
+
+    <div class="container is-hidden-widescreen">
+    <div class="container is-hidden-widescreen" id="bpost-mobile">
+        {% for post in site.posts %}
+            <div class="column-b">
+                <figure class="image is-16by9">    
+                <img src="{{ post.image }}" width="100%" height="100%"></img>
+                </figure>
+            </div>
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.date | date_to_string }}</p>
+        <p>{{ post.content | strip_html | truncatewords: 27 }}</p>
+        <a href="{{ post.url }}"><button style="justify-content: center;">Read</button></a>
+        {% endfor %}
+    </div>
+</div>
