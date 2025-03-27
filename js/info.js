@@ -2,16 +2,42 @@ var intervalId;
 
 function displayUserAgent() {
   var userAgentString = navigator.userAgent;
-  var htmlContent = '<p><i class="fas fa-circle-info"></i> Horibyte Website Version 2.3.3.3098.main.250317-1623</p><i class="fas fa-user-gear"></i>&nbsp;' + userAgentString;
+  var originalText = '<p><i class="fas fa-circle-info"></i> HoriWebsite Version 2.4.3562.main.250326-1942</p><i class="fas fa-user-gear"></i>&nbsp;' + userAgentString;
+  var htmlContent = originalText; // Default to original text
+
+  const isLocalhost = window.location.hostname === "127.0.0.1" || window.location.hostname === "localhost";
+
+  if (event && event.shiftKey && isLocalhost) { // Check shift key and localhost
+    htmlContent = originalText.replace("HoriWebsite", "HoriWebsite Development Version;");
+  }
+
   document.getElementById('userAgent').innerHTML = htmlContent;
 }
 
 function updateDateTime() {
-  var now = new Date();
-  var dateTimeString = now.toLocaleString();
-  var htmlContent = '<i class="fas fa-user-clock"></i>&nbsp;' + dateTimeString;
-  document.getElementById('dateTime').innerHTML = htmlContent;
-}
+    var now = new Date();
+    var options = {
+      weekday: 'long',
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+      hour: 'numeric',
+      minute: 'numeric',
+      second: 'numeric'
+    };
+  
+    var dateTimeString = now.toLocaleString(undefined, options);
+  
+    // Get the timezone offset in minutes
+    var offset = now.getTimezoneOffset();
+    var sign = offset < 0 ? '+' : '-';
+    var hours = Math.abs(offset / 60);
+    var minutes = Math.abs(offset % 60);
+  
+    var gmtOffset = `GMT${sign}${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}`;
+    var htmlContent = '<i class="fas fa-user-clock"></i>&nbsp;' + dateTimeString + ` (${gmtOffset})`;
+    document.getElementById('dateTime').innerHTML = htmlContent;
+  }
 
 function handleShiftKeyPress(event) {
   if (event.keyCode === 16) {
@@ -19,7 +45,7 @@ function handleShiftKeyPress(event) {
     updateDateTime();
     // Start the interval only if it's not already running
     if (!intervalId) {
-      intervalId = setInterval(updateDateTime, 1000); 
+      intervalId = setInterval(updateDateTime, 1000);
     }
   }
 }

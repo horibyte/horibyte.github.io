@@ -7,6 +7,7 @@
     font-size: 20px;
 }
 
+
 /* Set links color to white */
 #navbar-links a {
   color: white;
@@ -192,7 +193,7 @@ i, em {
 /* Mozilla Web Docs Custom Scrollbar */
 html {
   overflow: scroll !important;
-  scrollbar-color: #091b36 #050813 !important;
+  scrollbar-color: #761600 #510b01 !important;
   scrollbar-width: thin !important;
   overflow-x: hidden !important;
 }
@@ -205,7 +206,7 @@ html {
 
 /* Apply Background */
 html {
-  background-image: url('/img/bg.png');
+  background-image: url('/img/bg.jpg');
 	background-attachment: fixed !important;
 	background-size: cover !important;
 }
@@ -216,7 +217,7 @@ html {
   font-optical-sizing: auto;
   font-weight: Medium;
   font-style: normal;
-  text-shadow: 2px 2px 3px rgba(0,0,0,0.9);
+  text-shadow: 2px 2px rgba(0,0,0,0.7);
 }
 
 /* Button style, this was pain to get right */
@@ -228,5 +229,9 @@ button {
   border-style: solid;
   border: solid 5px;
   font-size: 20px;
-  box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+  box-shadow: 2px 2px rgba(0,0,0,0.7);
+}
+
+figure {
+  box-shadow: 2px 2px rgba(0,0,0,0.7);
 }
