@@ -1,0 +1,17 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\VMware, Inc.\VMware for Windows NT\License]
+"Fields"="Cpt, Name, Email, LicenseType, LicenseClass, Field2"
+"Field2"="Count, LicenseKey, ProductID, ProductType, Expiration"
+"Cpt"="COPYRIGHT (c) VMware, Inc. 1999"
+"Name"="freeware user"
+"Email"="freeware@user.com"
+"LicenseType"="User"
+"LicenseClass"="Full"
+"Count"="1 of 1"
+"LicenseKey"="000000_000"
+"ProductID"="VMware for Windows NT"
+"ProductType"="1.0.x"
+"Expiration"="2044-01-01"
+"Hash"="a481a5bd-8738cbcd-f31b8a17-20fc87c0-1d532054"
+
