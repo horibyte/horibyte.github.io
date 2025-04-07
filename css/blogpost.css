@@ -24,7 +24,7 @@ i, em {
 /* Mozilla Web Docs Custom Scrollbar */
 html {
   overflow: scroll !important;
-  scrollbar-color: #761600 #510b01 !important;
+  scrollbar-color: #b98558 #363137 !important;
   scrollbar-width: thin !important;
   overflow-x: hidden !important;
 }
@@ -154,7 +154,7 @@ a {
 
 /* Apply Background */
 html {
-  background-image: url('/img/bg.jpg');
+  background-image: url('/img/bg.png');
   background-size: cover;
   background-attachment: fixed;
 }

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booting from installation media without a USB ~ Horibyte Blog</title>
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+    <!--<link rel="stylesheet" href="https://stuffyxp.github.io/css/bulma.css"> -->
+    <link rel="me" href="https://wetdry.world/@horibyte">
+    <link rel="stylesheet" href="/css/blogpost.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css">
+<meta property="og:title" content="Booting from installation media without a USB ~ Horibyte Blog">
+<meta property="og:image" content="/img/favicon.png">
+<meta property="og:description" content="it's actually possible">
+<meta property="og:url" content="/blog/2025/04/06/booting-from-install-media-without-usb.html">
+<meta name="theme-color" content="#761600">
+<meta content="website" property="og:type">
+<style>
+  #navbar-links {
+        color: white !important;
+    }
+</style>
+</head>
+<body>
+    <!--[if IE]>
+  <script src="/js/oneko-ie6.js"></script>
+<![endif]-->
+<!--[if !IE]><!-->
+  <script src="/js/oneko.js"></script>
+  <!--<![endif]-->
+<div class="box" id="navbar">
+    <img class="is-hidden-mobile" src="/img/wdmk.png" alt="Horibyte Wordmark" title="Horibyte" width="483px" height="auto" id="hbWordmark">
+    <img class="is-hidden-widescreen" src="/img/wdmk.png" alt="Horibyte Wordmark" title="Horibyte" width="100%" height="100%" id="hbWordmark">
+    <p></p>
+<div class="container" id="navbar-links">
+    <a href="/blog"><button>Go Back</button></a>
+</div>
+</div>
+<div class="container" style="text-align: left; padding-left: 1.5%;">
+    <p id="userAgent"></p>
+    <p id="dateTime"></p>
+  </div>
+    <script src="/js/info.js"></script>
+<div class="content" id="btitle-date">
+    <h2>Booting from installation media without a USB</h2>
+    <h3>06 Apr 2025</h3>
+</div>
+<div class="container is-hidden-mobile" id="bcontent">
+    <p>&nbsp;</p>
+<p>Yes, it’s actually possible, and today I’ll show you how.</p>
+
+<p>First things first, your computer needs to have UEFI enabled, as there aren’t any good tricks for BIOS (that I am aware of)</p>
+
+<p>And before you say so, yes, I was a Legacy BIOS user for ~5 years, but in those 5 years, I haven’t found anythin’ other than <a href="https://unetbootin.github.io">Unetbootin</a>, but today we are not gonna talk about that.</p>
+
+<p>There are a couple of methods to boot from install media without a USB, but today I’m gonna give you the most simple method I could find. Scared of rEFInd? No problem!</p>
+
+<h1 id="getting-ground-ready">Getting ground ready</h1>
+
+<p>First of all, get your installation ISO up and ready, Linux and Windows, or any OS that has the EFI files structured within <code class="language-plaintext highlighter-rouge">efi\boot</code> by default will work.</p>
+
+<p>Go ahead to Disk Management (<code class="language-plaintext highlighter-rouge">diskmgmt.msc</code>) and shrink any basic data partition to the size of your installation ISO (for example, if your ISO is 4.7GB, make the partition 4.7GB), in my case, since I will use Kubuntu 24.04 LTS, I will make the partition 4.4GB, just in case.</p>
+
+<p><img src="/blog/img/2025-04-06/diskmgmtresults.png" alt="Disk Management window showing the results of the operation." /></p>
+
+<p>You should now have a 4.4GB FAT32 partition, now get your ISO, open it via any file archiving utility like <a href="https://7zip.org">7-Zip</a> or <strong>mount it via Windows’ Image Burner</strong> (<em>if you’re on Windows 10 or 11</em>).</p>
+
+<p><img src="/blog/img/2025-04-06/7zipfilecontents.png" alt="7-Zip File Manager showing the contents of the Kubuntu 24.04.2 LTS ISO" /></p>
+
+<h1 id="copying-files-for-installation">Copying files for installation</h1>
+
+<p>With the files opened in the file explorer, copy them to the root of the FAT32 partition.</p>
+
+<p>With 7-Zip, the dialog should look like this</p>
+
+<p><img src="/blog/img/2025-04-06/7zipcopying.png" alt="7-Zip copying the files from the ISO to E:" /></p>
+
+<p>….Then you’re all set! Next up reboot your computer and press F12 (or the boot menu keybind the POST screen should tell you), if done correctly, it should show the model of your hard drive, then the partition number (FYI the Windows partition is shown as Windows Boot Manager).</p>
+
+<p>Most firmwares should directly boot from it, due to the presence of a .efi file on <code class="language-plaintext highlighter-rouge">efi\boot</code>, which will be detected as a bootable entry.</p>
+
+<p>Now continue your installation procedure as usual, you’re all good to go!</p>
+
+<h1 id="some-limitations">Some limitations</h1>
+
+<p>If you want to try this on virtualizators like VMware, you’re out of luck, its boot menu doesn’t seem to show the partition, and it defaults to Windows Boot Manager (or any boot manager installed). If no OS is installed yet the partition is present, it will time out and try to boot from the network. I’m not so sure if the EFI shell will help with it, but if you manage to get it working, I’ll be sure to edit this post.</p>
+
+<p>I’ve yet not tested on other computer with UEFI firmware, so I am not sure if it works on ALL UEFI hardware, if it doesn’t work, don’t blame me, blame your PC manufacterer.</p>
+
+<p>Well now I’m gonna go, Horibyte signing off.</p>
+
+
+</div>
+<div class="container is-hidden-widescreen" id="bcontent-m">
+    <p>Yes, it’s actually possible, and today I’ll show you how.</p>
+
+<p>First things first, your computer needs to have UEFI enabled, as there aren’t any good tricks for BIOS (that I am aware of)</p>
+
+<p>And before you say so, yes, I was a Legacy BIOS user for ~5 years, but in those 5 years, I haven’t found anythin’ other than <a href="https://unetbootin.github.io">Unetbootin</a>, but today we are not gonna talk about that.</p>
+
+<p>There are a couple of methods to boot from install media without a USB, but today I’m gonna give you the most simple method I could find. Scared of rEFInd? No problem!</p>
+
+<h1 id="getting-ground-ready">Getting ground ready</h1>
+
+<p>First of all, get your installation ISO up and ready, Linux and Windows, or any OS that has the EFI files structured within <code class="language-plaintext highlighter-rouge">efi\boot</code> by default will work.</p>
+
+<p>Go ahead to Disk Management (<code class="language-plaintext highlighter-rouge">diskmgmt.msc</code>) and shrink any basic data partition to the size of your installation ISO (for example, if your ISO is 4.7GB, make the partition 4.7GB), in my case, since I will use Kubuntu 24.04 LTS, I will make the partition 4.4GB, just in case.</p>
+
+<p><img src="/blog/img/2025-04-06/diskmgmtresults.png" alt="Disk Management window showing the results of the operation." /></p>
+
+<p>You should now have a 4.4GB FAT32 partition, now get your ISO, open it via any file archiving utility like <a href="https://7zip.org">7-Zip</a> or <strong>mount it via Windows’ Image Burner</strong> (<em>if you’re on Windows 10 or 11</em>).</p>
+
+<p><img src="/blog/img/2025-04-06/7zipfilecontents.png" alt="7-Zip File Manager showing the contents of the Kubuntu 24.04.2 LTS ISO" /></p>
+
+<h1 id="copying-files-for-installation">Copying files for installation</h1>
+
+<p>With the files opened in the file explorer, copy them to the root of the FAT32 partition.</p>
+
+<p>With 7-Zip, the dialog should look like this</p>
+
+<p><img src="/blog/img/2025-04-06/7zipcopying.png" alt="7-Zip copying the files from the ISO to E:" /></p>
+
+<p>….Then you’re all set! Next up reboot your computer and press F12 (or the boot menu keybind the POST screen should tell you), if done correctly, it should show the model of your hard drive, then the partition number (FYI the Windows partition is shown as Windows Boot Manager).</p>
+
+<p>Most firmwares should directly boot from it, due to the presence of a .efi file on <code class="language-plaintext highlighter-rouge">efi\boot</code>, which will be detected as a bootable entry.</p>
+
+<p>Now continue your installation procedure as usual, you’re all good to go!</p>
+
+<h1 id="some-limitations">Some limitations</h1>
+
+<p>If you want to try this on virtualizators like VMware, you’re out of luck, its boot menu doesn’t seem to show the partition, and it defaults to Windows Boot Manager (or any boot manager installed). If no OS is installed yet the partition is present, it will time out and try to boot from the network. I’m not so sure if the EFI shell will help with it, but if you manage to get it working, I’ll be sure to edit this post.</p>
+
+<p>I’ve yet not tested on other computer with UEFI firmware, so I am not sure if it works on ALL UEFI hardware, if it doesn’t work, don’t blame me, blame your PC manufacterer.</p>
+
+<p>Well now I’m gonna go, Horibyte signing off.</p>
+
+
+</div>
+<div class="container foot" id="footer">
+    <p>&copy; 2025 Horibyte.</p>
+    <p>The source code of this website is licensed under MIT.</p>
+</div>
+<style>
+    h1 {
+        text-align: left !important;
+    }
+    img {
+        justify-content: center;
+        margin: 0 auto;
+        display: block;
+    }
+</style>
+</body>
+</html>
