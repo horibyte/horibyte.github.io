@@ -2,7 +2,7 @@ var intervalId;
 
 function displayUserAgent() {
   var userAgentString = navigator.userAgent;
-  var originalText = '<p><i class="fas fa-circle-info"></i> HoriWebsite Version 2.4.3565.main.250406-1905</p><i class="fas fa-user-gear"></i>&nbsp;' + userAgentString;
+  var originalText = '<p><i class="fas fa-circle-info"></i> HoriWebsite Version 2.5.3567.main.255407-1947</p><i class="fas fa-user-gear"></i>&nbsp;' + userAgentString;
   var htmlContent = originalText; // Default to original text
 
   const isLocalhost = window.location.hostname === "127.0.0.1" || window.location.hostname === "localhost";

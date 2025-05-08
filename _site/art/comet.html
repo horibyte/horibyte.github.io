@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home ~ Horibyte</title>
+    <title>Comet ~ Art ~ Horibyte</title>
     <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
     <!--<link rel="stylesheet" href="https://stuffyxp.github.io/css/bulma.css">; tempora -->
     <link rel="me" href="https://wetdry.world/@horibyte">
@@ -76,43 +76,45 @@ redirectIfNintendo3DS();
     <p id="dateTime"></p>
   </div>
     <script src="/js/info.js"></script>
-<!-- redir if old -->
- <script>
- function redirectOldBrowsers() {
-  // 1. Check for specific old browser versions
-  var isOldIE = navigator.userAgent.indexOf('MSIE') !== -1 && parseInt(navigator.userAgent.split('MSIE')[1]) < 9;
-  var isOldSafari = navigator.userAgent.indexOf('Safari') !== -1 && navigator.userAgent.indexOf('Version/5') !== -1; 
-  // ... add more specific checks if needed
-
-  // 2. Check for lack of HTML5 features (example: canvas)
-  var supportsHTML5 = !!document.createElement('canvas').getContext;
-
-  // Redirect if any condition is met
-  if (isOldIE || isOldSafari || !supportsHTML5 /* || other conditions */) {
-    window.location.href = "http://retro.horibyte.is-a.dev"; // Replace with your actual URL
-  }
-}
-
-// Call the function when the page loads
-redirectOldBrowsers();
- </script>
-
-<h2>Welcome! 👋</h2>
-<P>This is Horibyte's personal website, feel free to explore this whenever you want!</P>
-<p>&NonBreakingSpace;</p>
-<h3>Where do you want to go today?</h3>
-<p><a href="https://youtube.com/@horibyte"><button><i class="fa-brands fa-youtube"></i>&nbsp;YouTube Channel</button></a>&nbsp;<a href="https://wetdry.world/@horibyte"><button><i class="fa-brands fa-mastodon"></i>&nbsp;Mastodon Profile</button></a>&nbsp;<a href="https://bsky.app/profile/horibyte.is-a.dev"><button><i class="fab fa-bluesky"></i>&nbsp;Bluesky Profile</button></a>&nbsp;<a href="https://discord.gg/V3Qfd8vnFz"><button><i class="fab fa-discord"></i>&nbsp;Discord Server</button></a></p>
-<p>&nbsp;</p>
-<div style="text-align: center;">
-<h3 style="font-size: 22px;">Webrings!</h3>
-
-<p><p style="font-size: 20px;">Fediring</p>
-    <a href="https://fediring.net/previous?host=horibyte.is-a.dev"><button><i class="fa-solid fa-left-long"></i> Previous</button></a>
-    <a href="https://fediring.net/random"><button><i class="fa-solid fa-repeat"></i> Random</button></a>
-    <a href="https://fediring.net/next?host=horibyte.is-a.dev"><button><i class="fa-solid fa-right-long"></i> Next</button></a>
-</p>
+<h2>My OC (original character).</h2>
+<div class="row is-hidden-mobile">
+<img src="/img/comet/pfpsketch.png" id="cometprev" alt="A drawing of a head of an anthropomorphic dog with floppy ears, an oval-like-shaped head, wearing a yellow cape, body colors are light yellow and brown, with brown spots on the head and some parts of the chest, said character can be seen behind a sunset." width="14%" height="auto">
+<div class="container" id="comet-about" style="padding-left: 1%;">
+    <div class="container" style="text-align:left;">
+<h2>Comet<br><span style="font-size:medium;">they/them</span><br></h2>
+    </div>
+<p style="text-align:left;">An adventurous and energetic, yet socially awkward dog, saved multiple times from life-threatening situations due to their chaotic curiosity. Has ADHD (Inattentive & Hyperactive), is aroace and likes hotdogs. Origins are unknown.</p>
 </div>
+</div>
+<div class="is-hidden-widescreen">
+    <img src="/img/comet/pfpsketch.png" alt="A drawing of a head of an anthropomorphic dog with floppy ears, an oval-like-shaped head, wearing a yellow cape, body colors are light yellow and brown, with brown spots on the head and some parts of the chest, said character can be seen behind a sunset." style="max-width: 100%; height: auto;">
+    <h2>Comet<br><span style="font-size:medium;">they/them</span><br></h2>
+    <p>An adventurous and energetic, yet socially awkward dog, saved multiple times from life-threatening situations due to their chaotic curiosity. Has ADHD (Inattentive & Hyperactive), is aroace and likes hotdogs. Origins are unknown.</p>
+</div>
+<!-- inline sheet styling, only touch for debug -->
+ <!-- man css is so buggy istg -->
+<style>
+#comet-about {
+    width:50%;
+}
+#cometprev {
+    display:flex;
+}
+</style>
 <p>&nbsp;</p>
+<h2>Some more info</h2>
+<ul style="text-align: left; padding-left: 10%; gap:3px;">
+    <li><b>Date of Birth</b>: May 16, 2008</li>
+    <li><b>Place of residence</b>: Fucking, Horiland</li>
+    <li><b>NID (National Identity Document) Number</b>: 65a-2008-1110</li>
+    <li><b>Species</b>: Dog [Cocker Spaniel]</li>
+    <li><b>Personality</b>: Caring, energetic, silly.</li>
+    <li><b>Likes</b>: hugs, pets and emotional support.</li>
+    <li><b>Dislikes</b>: pretty much anything that can make him mad.</li>
+    <li>Knows alot about IT and can also break tech the ways you have never seen before&trade; (i have never been so proud :'))</li>
+    <li><b>Family? Parents?</b>: Unknown data.</li>
+    <li><b>very fire qoute:</b>"woof" - Comet, 2010</li>
+</ul>
 
 </div>
 <div class="container foot" id="footer">
